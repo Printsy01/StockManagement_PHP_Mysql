@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Nom" id="nom">
+        <input type="text" placeholder="Prenom" id="prenom">
+        <button type="button" id="btn">Insérer</button>
+        <button type="button" id="btn1">Effacer</button>
+    </form>
+
+    <table id="table" border="1">
+        <tr>
+            <th>Nom</th>
+            
+        </tr>
+    </table>
+
+</body>
+<script>
+
+var btn1 = document.getElementById("btn");
+btn1.addEventListener("click" , ajoutl);
+var akizy = document.getElementById("nom").value ;
+
+var btn2 = document.getElementById("btn1");
+btn2.addEventListener("click" , delet);
+
+var table = document.getElementById("table");
+
+function ajoutl() {
+var table = document.getElementById("table");
+  var ligne = table.insertRow(-1);
+
+  var colonne2 = ligne.insertCell(0);
+  colonne2.innerHTML += document.getElementById("nom").value ;
+
+    var akizy = document.getElementById("nom").value ;
+    eleve.push(akizy);
+}
+var i=0;
+function delet() {
+    for(i=0;i<table.length;i++) {
+        var tab = table.rows[i].value;
+        if(akizy == tab) {
+            
+        }
+    }
+}
+
+</script>
+</html>
